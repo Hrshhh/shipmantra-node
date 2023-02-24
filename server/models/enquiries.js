@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const {Schema} = mongoose
 
-const userSchema = new Schema({
+const enquirySchema = new Schema({
     businessName:{
         type: String,
         required: "Business Name is required"
@@ -27,4 +27,4 @@ const userSchema = new Schema({
 
 },{timestamps: true})
 
-export default mongoose.model('User', userSchema)
+export default mongoose.model('b2b_enquiries', enquirySchema)

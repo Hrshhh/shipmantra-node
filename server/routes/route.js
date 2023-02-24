@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-import { user } from '../controllers/user';
+import { savingQueriesInDatabase } from '../controllers/enquiries';
 
-router.post('/user', user);
+router.post('/enquiries', savingQueriesInDatabase);
 
 export default router;

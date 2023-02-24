@@ -13,7 +13,7 @@ const Form = () => {
 
         e.preventDefault();
         try{
-            await axios.post(`http://localhost:8000/api/register`, {
+            await axios.post(`http://localhost:8000/api/enquiries`, {
                 businessName,
                 contactName,
                 phoneNumber,
