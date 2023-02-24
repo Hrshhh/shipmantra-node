@@ -27,8 +27,4 @@ const enquirySchema = new Schema({
 
 },{timestamps: true})
 
-<<<<<<< HEAD:server/models/enquiries.js
 export default mongoose.model('b2b_enquiries', enquirySchema)
-=======
-export default mongoose.model('b2b_queries', userSchema)
->>>>>>> 2b79017b43a7d7591cc026e7cecbccd18e447dce:server/models/user.js
