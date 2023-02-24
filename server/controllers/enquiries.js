@@ -30,7 +30,7 @@ export const findAllUsers = async (req, res) => {
 export const findWithContactName = async (req, res) => {
     // For finding all documents with specific contact Name
     try{
-        await b2b_enquiries.find({contactName: "Harsh"}).then(users => {
+        await b2b_enquiries.find({contactName: req.params.contactName}).then(users => {
             if(!users){
                 return res.status(404).json({
                     success: false,
@@ -56,7 +56,7 @@ export const findWithContactName = async (req, res) => {
 export const findWithWebsiteName = async (req, res) => {
     //For finding a document with specific Website Name
     try{
-        await b2b_enquiries.findOne({websiteName: "abc.com"}).then((response) => {
+        await b2b_enquiries.findOne({websiteName: req.params.websiteName}).then((response) => {
             if(!response){
                 return res.status(404).send("Website Name not found")
             }else {
